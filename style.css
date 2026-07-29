@@ -746,6 +746,7 @@ button {
 .skill-logo-js { background: linear-gradient(135deg, #F59E0B, #FCD34D); }
 .skill-logo-swift { background: linear-gradient(135deg, #F97316, #FB7185); }
 .skill-logo-swiftui { background: linear-gradient(135deg, #22C55E, #4ADE80); }
+.skill-logo-react { background: linear-gradient(135deg, #61DAFB, #22D3EE); color: #0B0F19; }
 .skill-logo-java { background: linear-gradient(135deg, #2563EB, #3B82F6); }
 .skill-logo-git { background: linear-gradient(135deg, #EF4444, #F97316); }
 .skill-logo-vscode { background: linear-gradient(135deg, #6366F1, #A78BFA); }
