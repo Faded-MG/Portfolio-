@@ -1,4 +1,3 @@
-const themeToggle = document.getElementById('themeToggle');
 const body = document.body;
 const menuToggle = document.getElementById('menuToggle');
 const mobileMenu = document.getElementById('mobileMenu');
@@ -16,29 +15,6 @@ const typingText = document.getElementById('typingText');
 const heroSection = document.querySelector('.hero-section');
 
 let logoClicks = 0;
-
-const setTheme = theme => {
-  if (theme === 'light') {
-    body.classList.add('light');
-  } else {
-    body.classList.remove('light');
-  }
-  localStorage.setItem('portfolioTheme', theme);
-};
-
-const initTheme = () => {
-  const savedTheme = localStorage.getItem('portfolioTheme');
-  if (savedTheme) {
-    setTheme(savedTheme);
-  } else {
-    setTheme('dark');
-  }
-};
-
-themeToggle.addEventListener('click', () => {
-  const current = body.classList.contains('light') ? 'light' : 'dark';
-  setTheme(current === 'light' ? 'dark' : 'light');
-});
 
 menuToggle.addEventListener('click', () => {
   const expanded = menuToggle.getAttribute('aria-expanded') === 'true';
@@ -187,7 +163,6 @@ window.addEventListener('load', () => {
   setTimeout(() => {
     loadingScreen.classList.add('hide');
   }, 450);
-  initTheme();
   updateActiveNav();
   updateScrollProgress();
 });

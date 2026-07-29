@@ -54,65 +54,6 @@ button {
   color: #F9FAFB;
 }
 
-body.light {
-  color-scheme: light;
-  --bg: #F8FAFC;
-  --surface: #F8FAFC;
-  --surface-strong: #FFFFFF;
-  --card: #F1F5F9;
-  --border: rgba(15,23,42,0.08);
-  --text: #0F172A;
-  --muted: #475569;
-  --muted-strong: #0F172A;
-  --shadow: 0 28px 80px rgba(15,23,42,0.1);
-}
-
-body.light .topbar,
-body.light .mobile-menu,
-body.light .contact-panel,
-body.light .achievement-card,
-body.light .value-card,
-body.light .journey-card,
-body.light .project-card,
-body.light .skill-card,
-body.light .stat-card,
-body.light .about-portrait .portrait-frame {
-  background: rgba(255,255,255,0.88);
-}
-
-body.light .hero-description,
-body.light .section-label,
-body.light .muted,
-body.light .text-link,
-body.light .footer-note {
-  color: var(--muted);
-}
-
-body.light .button-secondary,
-body.light .button-outline {
-  background: rgba(15,23,42,0.05);
-  color: var(--text);
-}
-
-body.light .topbar {
-  background: rgba(248,250,252,0.84);
-  border-bottom: 1px solid rgba(15,23,42,0.06);
-}
-
-body.light .topbar-inner a,
-body.light .nav-link,
-body.light .footer-links a,
-body.light .footer-social a,
-body.light .mobile-nav-link,
-body.light .section-header p {
-  color: var(--text);
-}
-
-body.light .page-shell::after {
-  background: radial-gradient(circle at 20% 20%, rgba(59,130,246,0.18), transparent 26%),
-              radial-gradient(circle at 80% 10%, rgba(96,165,250,0.14), transparent 28%),
-              radial-gradient(circle at 70% 75%, rgba(59,130,246,0.12), transparent 30%);
-}
 
 .loading-screen {
   position: fixed;
