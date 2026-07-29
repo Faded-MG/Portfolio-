@@ -1,192 +1,519 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mahlet Getinet — Computer Science student and aspiring iOS developer creating polished digital experiences.">
+  <meta name="theme-color" content="#0B0F19">
+  <title>Mahlet Getinet | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
-    <header>
-        <h1>Mahlet Getinet</h1>
-        <p>Computer Science Student | Aspiring iOS Developer</p>
-    </header>
-
-    <nav>
-        <div class="brand">
-            <span>MAHLET</span>
-        </div>
-
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
-    <section class="hero" id="home">
-        <div class="hero-text">
-            <span class="eyebrow">Hello, I’m</span>
-            <h1>Mahlet Getinet</h1>
-            <p class="hero-lead">Computer Science student crafting elegant apps and learning iOS development.</p>
-
-            <div class="hero-details">
-                <div>
-                    <strong>Role</strong>
-                    <p>Computer Science Student</p>
-                </div>
-                <div>
-                    <strong>Focus</strong>
-                    <p>Aspiring iOS Developer</p>
-                </div>
-            </div>
-
-            <p class="hero-description">
-                I build creative software solutions and explore the intersection between technology, design, and human experience.
-            </p>
-
-            <div class="hero-actions">
-                <a class="button primary" href="#projects">View My Work</a>
-                <a class="button secondary" href="#contact">Get in Touch</a>
-            </div>
-        </div>
-
-        <div class="profile">
-            <img src="images/me.jpg" alt="Mahlet Getinet profile picture">
-        </div>
-    </section>
-
-    <section class="content-section" id="about">
-        <div class="section-header">
-            <h2>About Me</h2>
-            <p>I'm a third-year Computer Science student passionate about building software that is both functional and enjoyable to use. I enjoy learning new technologies, solving challenging problems, and continuously improving my development skills.</p>
-        </div>
-
-        <div class="about-grid">
-            <div>
-                <h3>Who I am</h3>
-                <p>I am a Computer Science student with a passion for mobile design, clean code, and learning new technologies.</p>
-            </div>
-            <div>
-                <h3>What I do</h3>
-                <p>Build responsive websites using HTML, CSS, and JavaScript</p>    
-
-                <p>Learn iOS development with Swift and SwiftUI</p>
-                <p>Practice data structures, algorithms, and software engineering principles</p>
-                
-            </div>
-        </div>
-    </section>
-
-    <section class="content-section" id="projects">
-        <div class="section-header">
-            <h2>Projects</h2>
-            <p>Selected work that shows my approach to design, code, and solving real problems.</p>
-        </div>
-
-        <div class="project-grid">
-            <article class="project-card">
-                <h3>Smart Route </h3>
-                <p>A web app that helps users find the best routes based on real-time traffic data and user preferences.</p>
-                <p>Technologies: HTML, CSS, JavaScript</p>
-            </article>
-            <article class="project-card">
-                <h3>Personal Portfolio</h3>
-                <p>A responsive portfolio page that highlights projects, skills, and contact details.</p>
-                <p>Technologies: HTML, CSS, JavaScript</p>
-            </article>
-            <article class="project-card">
-                <h3>AI homework helper</h3>
-                <p>An intelligent tool designed to assist students with their homework by providing explanations and solutions.</p>
-                <p>Technologies: JavaScript</p>
-            </article>
-        </div>
-    </section>
-
-    <section class="content-section" id="skills">
-        <div class="section-header">
-            <h2>Skills</h2>
-            <p>Tools and technologies I use while learning and building.</p>
-        </div>
-
-        <div class="skills-grid">
-            <div class="skill-card">
-                <img src="images/swift.png" alt="Swift logo">
-                <span>Swift</span>
-            </div>
-            <div class="skill-card">
-                <img src="images/swiftui.png" alt="SwiftUI logo">
-                <span>SwiftUI</span>
-            </div>
-            <div class="skill-card">
-                <img src="images/html.png" alt="HTML logo">
-                <span>HTML</span>
-            </div>
-            <div class="skill-card">
-                <img src="images/css.jpg" alt="CSS logo">
-                <span>CSS</span>
-            </div>
-            <div class="skill-card">
-                <img src="images/js.png" alt="JavaScript logo">
-                <span>JavaScript</span>
-            </div>
-            <div class="skill-card">
-                <img src="images/cpp.png" alt="C++ logo">
-                <span>C++</span>
-            </div>
-            <div class="skill-card">
-                <img src="images/java.png" alt="Java logo">
-                <span>Java</span>
-            </div>
-          
-        </div>
-    </section>
-<section> Tools
-      <div class="skill-card">
-                <img src="images/git.png" alt="Git logo">
-                <span>Git</span>
-                <div>
-                    <span>GitHub</span>
-                </div>
-            </div>
-              <div class="skill-card">
-                <img src="images/git.png" alt="Git logo">
-                <span>VS Code
-                
-                </span>
-                <span>Xcode</span>
-
-
-            </div>
-            
-</section>
-<section>
-    Currently Learning 
-    <div> 
-        <span>SwiftUI</span>
-        <span>iOS Development</span>
-        <span> UI/UX Design</span>
+  <div class="loading-screen" id="loadingScreen" aria-hidden="true">
+    <div class="loader-shell">
+      <div class="loader-ring"></div>
+      <p>Preparing a premium experience...</p>
     </div>
-</section>
-    <section class="content-section contact-section" id="contact">
-        <div class="section-header">
-            <h2>Contact</h2>
-            <p>Interested in collaborating? Send a message and let’s connect.</p>
+  </div>
+
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <header class="topbar" id="topbar">
+    <div class="topbar-inner">
+      <a href="#home" class="brand" id="logoBtn" aria-label="Go to home section">
+        <span class="brand-mark">MG</span>
+        <span class="brand-name">Mahlet</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <ul class="nav-list" id="navList">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="topbar-actions">
+        <button class="icon-btn theme-toggle" id="themeToggle" aria-label="Toggle dark and light mode">
+          <span class="toggle-sun" aria-hidden="true">☀️</span>
+          <span class="toggle-moon" aria-hidden="true">🌙</span>
+        </button>
+        <button class="icon-btn menu-toggle" id="menuToggle" aria-label="Open mobile menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu" hidden>
+      <ul class="mobile-nav-list">
+        <li><a href="#home" class="mobile-nav-link">Home</a></li>
+        <li><a href="#about" class="mobile-nav-link">About</a></li>
+        <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+        <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+        <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+      </ul>
+      <div class="mobile-actions">
+        <a href="#projects" class="button button-ghost">View Projects</a>
+        <a href="mailto:mahletgetinet17@gmail.com" class="button button-outline">Email Me</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-section" id="home">
+      <div class="hero-copy reveal reveal-up">
+        <span class="eyebrow">Hello, I’m</span>
+        <h1>Mahlet <span>Getinet</span></h1>
+        <p class="hero-title"><span id="typingText" class="typing-text" aria-live="polite"></span><span class="typing-cursor" aria-hidden="true">|</span></p>
+        <p class="hero-description">I build thoughtful digital experiences through clean code, elegant interfaces, and a passion for solving real-world problems.</p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="button button-primary">View Projects</a>
+          <a href="Mahlet_Getinet_Resume.pdf" class="button button-secondary" download>Download Resume</a>
+          <a href="#contact" class="button button-alt">Contact Me</a>
         </div>
 
-        <div class="contact-card">
-            <p>Email: <a href="mailto:mahletgetinet17@gmail.com">mahletgetinet17@gmail.com</a></p>
-            <p>Location: Addis Ababa, Ethiopia</p>
+        <div class="hero-meta-grid">
+          <div class="hero-meta-item">
+            <span>Projects Completed</span>
+            <strong>5+</strong>
+          </div>
+          <div class="hero-meta-item">
+            <span>Technologies Explored</span>
+            <strong>14</strong>
+          </div>
+          <div class="hero-meta-item">
+            <span>Hours Coding</span>
+            <strong>350+</strong>
+          </div>
         </div>
+      </div>
+
+      <div class="hero-visual reveal reveal-fade">
+        <div class="hero-glow"></div>
+        <div class="hero-ring"></div>
+        <div class="hero-badge">iOS • Swift • UI</div>
+        <div class="hero-image-shell">
+          <img src="images/me.jpg" alt="Mahlet Getinet portrait" class="hero-image" loading="lazy">
+        </div>
+        <div class="hero-particles" aria-hidden="true">
+          <span class="particle"></span>
+          <span class="particle"></span>
+          <span class="particle"></span>
+          <span class="particle"></span>
+          <span class="particle"></span>
+        </div>
+        <div class="scroll-indicator" aria-hidden="true">
+          <span></span>
+        </div>
+      </div>
     </section>
 
-    <footer>
-        <p>© 2026 Mahlet Getinet</p>
-    </footer>
+    <section class="section about-section" id="about">
+      <div class="section-header reveal reveal-up">
+        <span class="section-label">About Me</span>
+        <h2>Human-centered development with technical depth.</h2>
+        <p>I’m a second-year Computer Science student focused on iOS development, UI/UX design, and building reliable software with thoughtful polish.</p>
+      </div>
 
-    <script src="script.js"></script>
+      <div class="about-grid">
+        <div class="about-portrait reveal reveal-left">
+          <div class="portrait-frame">
+            <img src="images/me.jpg" alt="Portrait of Mahlet Getinet" loading="lazy">
+          </div>
+        </div>
+
+        <div class="about-copy reveal reveal-right">
+          <p>Combining rigorous engineering habits with clean visual systems helps me craft interfaces that feel intuitive, confident, and memorable. I enjoy learning new APIs, refining workflows, and solving problems from the user’s perspective.</p>
+
+          <ul class="about-list">
+            <li>Second-year Computer Science student</li>
+            <li>Passionate about iOS Development</li>
+            <li>Interested in UI/UX and interaction design</li>
+            <li>Love solving problems with thoughtful code</li>
+            <li>Continuously learning new frameworks</li>
+          </ul>
+
+          <div class="stats-grid">
+            <div class="stat-card">
+              <strong class="stat-value" data-target="5">0</strong>
+              <span>Projects Completed</span>
+            </div>
+            <div class="stat-card">
+              <strong class="stat-value" data-target="8">0</strong>
+              <span>Languages Learned</span>
+            </div>
+            <div class="stat-card">
+              <strong class="stat-value" data-target="14">0</strong>
+              <span>Technologies Explored</span>
+            </div>
+            <div class="stat-card">
+              <strong class="stat-value" data-target="350">0</strong>
+              <span>Hours Coding</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section skills-section" id="skills">
+      <div class="section-header reveal reveal-up">
+        <span class="section-label">Skills</span>
+        <h2>Practical tools for modern products.</h2>
+        <p>Organized into languages, frameworks, tools, and current learning priorities.</p>
+      </div>
+
+      <div class="skill-groups">
+        <div class="skill-group reveal reveal-fade">
+          <h3>Languages</h3>
+          <div class="skill-card">
+            <div class="skill-logo skill-logo-html">HTML</div>
+            <div>
+              <span>HTML</span>
+              <div class="skill-bar"><span style="width:92%"></span></div>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-logo skill-logo-css">CSS</div>
+            <div>
+              <span>CSS</span>
+              <div class="skill-bar"><span style="width:88%"></span></div>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-logo skill-logo-js">JS</div>
+            <div>
+              <span>JavaScript</span>
+              <div class="skill-bar"><span style="width:86%"></span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-group reveal reveal-fade">
+          <h3>Frameworks</h3>
+          <div class="skill-card">
+            <div class="skill-logo skill-logo-swift">Swift</div>
+            <div>
+              <span>Swift</span>
+              <div class="skill-bar"><span style="width:84%"></span></div>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-logo skill-logo-swiftui">UI</div>
+            <div>
+              <span>SwiftUI</span>
+              <div class="skill-bar"><span style="width:80%"></span></div>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-logo skill-logo-java">Java</div>
+            <div>
+              <span>Java</span>
+              <div class="skill-bar"><span style="width:72%"></span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-group reveal reveal-fade">
+          <h3>Tools</h3>
+          <div class="skill-card">
+            <div class="skill-logo skill-logo-git">Git</div>
+            <div>
+              <span>Git</span>
+              <div class="skill-bar"><span style="width:86%"></span></div>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-logo skill-logo-vscode">VS</div>
+            <div>
+              <span>VS Code</span>
+              <div class="skill-bar"><span style="width:94%"></span></div>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-logo skill-logo-xcode">XC</div>
+            <div>
+              <span>Xcode</span>
+              <div class="skill-bar"><span style="width:82%"></span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-group reveal reveal-fade">
+          <h3>Learning</h3>
+          <div class="skill-card">
+            <div class="skill-logo skill-logo-algo">∑</div>
+            <div>
+              <span>Algorithms</span>
+              <div class="skill-bar"><span style="width:70%"></span></div>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-logo skill-logo-design">UI</div>
+            <div>
+              <span>Responsive Design</span>
+              <div class="skill-bar"><span style="width:72%"></span></div>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-logo skill-logo-arch">A</div>
+            <div>
+              <span>iOS Architecture</span>
+              <div class="skill-bar"><span style="width:68%"></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects-section" id="projects">
+      <div class="section-header reveal reveal-up">
+        <span class="section-label">Featured Projects</span>
+        <h2>Work that reflects polished thinking.</h2>
+        <p>Each project focuses on clarity, performance, and the details that matter.</p>
+      </div>
+
+      <div class="project-controls reveal reveal-fade">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="mobile">Mobile</button>
+        <button class="filter-btn" data-filter="ai">AI</button>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card reveal reveal-up" data-category="web">
+          <div class="project-top">
+            <span class="project-tag">Web</span>
+            <div class="project-actions">
+              <a href="https://mahletgetinet17.github.io/smart-route" class="text-link" target="_blank" rel="noreferrer">Live Demo</a>
+              <a href="https://github.com/mahletgetinet17/smart-route" class="text-link" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+          </div>
+          <div class="project-banner project-banner-1" aria-hidden="true"></div>
+          <h3>Smart Route</h3>
+          <p>A route recommendation experience that blends traffic insights and user preferences into smarter travel decisions.</p>
+          <div class="project-badges">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+          </div>
+        </article>
+
+        <article class="project-card reveal reveal-up" data-category="web">
+          <div class="project-top">
+            <span class="project-tag">Portfolio</span>
+            <div class="project-actions">
+              <a href="https://mahletgetinet17.github.io/portfolio" class="text-link" target="_blank" rel="noreferrer">Live Demo</a>
+              <a href="https://github.com/mahletgetinet17/portfolio" class="text-link" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+          </div>
+          <div class="project-banner project-banner-2" aria-hidden="true"></div>
+          <h3>Personal Portfolio</h3>
+          <p>A polished portfolio built for recruiters and interviewers, with a premium experience and strong visual hierarchy.</p>
+          <div class="project-badges">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+          </div>
+        </article>
+
+        <article class="project-card reveal reveal-up" data-category="ai">
+          <div class="project-top">
+            <span class="project-tag">AI</span>
+            <div class="project-actions">
+              <a href="https://mahletgetinet17.github.io/ai-homework-helper" class="text-link" target="_blank" rel="noreferrer">Live Demo</a>
+              <a href="https://github.com/mahletgetinet17/ai-homework-helper" class="text-link" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+          </div>
+          <div class="project-banner project-banner-3" aria-hidden="true"></div>
+          <h3>AI Homework Helper</h3>
+          <p>An educational assistant that helps students understand concepts through intelligent explanations and guided learning.</p>
+          <div class="project-badges">
+            <span>JavaScript</span>
+            <span>AI</span>
+            <span>UX</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section timeline-section" id="timeline">
+      <div class="section-header reveal reveal-up">
+        <span class="section-label">Timeline</span>
+        <h2>The path I’m building.</h2>
+        <p>A quiet, confident progress record that highlights the journey and momentum ahead.</p>
+      </div>
+
+      <div class="timeline-list">
+        <article class="timeline-item reveal reveal-left">
+          <span class="timeline-year">2024</span>
+          <h3>Started Computer Science</h3>
+          <p>Began academic study and built the foundation for technical thinking, data structures, and software design.</p>
+        </article>
+        <article class="timeline-item reveal reveal-left">
+          <span class="timeline-year">2025</span>
+          <h3>Began Web Development</h3>
+          <p>Created responsive interfaces, improved accessibility, and learned how design and code work together.</p>
+        </article>
+        <article class="timeline-item reveal reveal-left">
+          <span class="timeline-year">2026</span>
+          <h3>Learning Swift & iOS</h3>
+          <p>Focused on app architecture, SwiftUI patterns, and translating visual polish into mobile experiences.</p>
+        </article>
+        <article class="timeline-item reveal reveal-left">
+          <span class="timeline-year">Future</span>
+          <h3>Building Impactful Mobile Apps</h3>
+          <p>Moving toward projects that solve real problems while staying curious, consistent, and user-centered.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section journey-section" id="journey">
+      <div class="section-header reveal reveal-up">
+        <span class="section-label">Learning Journey</span>
+        <h2>Focus areas shaping my growth.</h2>
+        <p>Each card reflects a practical area I’m deepening every week.</p>
+      </div>
+
+      <div class="journey-grid">
+        <article class="journey-card reveal reveal-fade">
+          <h3>Currently Learning</h3>
+          <p>My current focus is building projects with better structure, reliable state flow, and thoughtful interactions.</p>
+        </article>
+        <article class="journey-card reveal reveal-fade">
+          <h3>SwiftUI</h3>
+          <p>Designing interface systems with responsive layouts, animation, and native app patterns.</p>
+        </article>
+        <article class="journey-card reveal reveal-fade">
+          <h3>iOS Architecture</h3>
+          <p>Practicing clean architecture, reusable components, and maintainable app structure.</p>
+        </article>
+        <article class="journey-card reveal reveal-fade">
+          <h3>Git</h3>
+          <p>Using branching, commits, and collaboration workflows to keep code reliable and reviewable.</p>
+        </article>
+        <article class="journey-card reveal reveal-fade">
+          <h3>Algorithms</h3>
+          <p>Strengthening problem solving with efficient logic, data transformation, and computational thinking.</p>
+        </article>
+        <article class="journey-card reveal reveal-fade">
+          <h3>Responsive Design</h3>
+          <p>Building interfaces that feel polished and intuitive across desktop, tablet, and mobile screens.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section achievements-section" id="achievements">
+      <div class="section-header reveal reveal-up">
+        <span class="section-label">Achievements</span>
+        <h2>Milestones I’m proud to share.</h2>
+      </div>
+
+      <div class="achievements-grid">
+        <article class="achievement-card reveal reveal-up">
+          <h3>Computer Science Student</h3>
+          <p>Living the learning process through coursework, personal projects, and practical experimentation.</p>
+        </article>
+        <article class="achievement-card reveal reveal-up">
+          <h3>Portfolio Projects</h3>
+          <p>Completed polished web and app concepts that highlight attention to both form and function.</p>
+        </article>
+        <article class="achievement-card reveal reveal-up">
+          <h3>Continuous Learner</h3>
+          <p>Committed to daily improvement in code quality, design refinement, and new technologies.</p>
+        </article>
+        <article class="achievement-card reveal reveal-up">
+          <h3>Future iOS Developer</h3>
+          <p>Building a foundation for apps that feel natural, reliable, and user-first.</p>
+        </article>
+        <article class="achievement-card reveal reveal-up">
+          <h3>GitHub Contributor</h3>
+          <p>Practicing collaborative workflows, code review, and version control discipline.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section values-section" id="values">
+      <div class="section-header reveal reveal-up">
+        <span class="section-label">What I Value</span>
+        <h2>Principles guiding every line of code.</h2>
+      </div>
+
+      <div class="values-grid">
+        <article class="value-card reveal reveal-fade">
+          <h3>Clean Code</h3>
+          <p>Code should be easy to read, easy to maintain, and intentional.</p>
+        </article>
+        <article class="value-card reveal reveal-fade">
+          <h3>Curiosity</h3>
+          <p>Learning new ideas and tools keeps every project evolving.</p>
+        </article>
+        <article class="value-card reveal reveal-fade">
+          <h3>Consistency</h3>
+          <p>Reliable habits make better products and better progress.</p>
+        </article>
+        <article class="value-card reveal reveal-fade">
+          <h3>Problem Solving</h3>
+          <p>Understanding the user’s need before writing a single line of code.</p>
+        </article>
+        <article class="value-card reveal reveal-fade">
+          <h3>Creativity</h3>
+          <p>Deliberate design choices help simple solutions feel premium.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="section-header reveal reveal-up">
+        <span class="section-label">Contact</span>
+        <h2>Let’s create something thoughtful.</h2>
+        <p>I’m available for internships, collaboration, and project conversations.</p>
+      </div>
+
+      <div class="contact-panel reveal reveal-fade">
+        <div class="contact-details">
+          <p class="contact-copy">Email</p>
+          <a href="mailto:mahletgetinet17@gmail.com" class="contact-link">mahletgetinet17@gmail.com</a>
+          <p class="contact-copy">Location</p>
+          <p class="contact-text">Addis Ababa, Ethiopia</p>
+          <div class="contact-buttons">
+            <a href="mailto:mahletgetinet17@gmail.com" class="button button-primary">Send Email</a>
+            <a href="https://github.com/mahletgetinet17" class="button button-secondary" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/mahletgetinet17" class="button button-alt" target="_blank" rel="noreferrer">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="brand-mark">MG</span>
+        <p>Designed for recruiters, professors, and technical teams.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-social">
+        <a href="https://github.com/mahletgetinet17" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/mahletgetinet17" target="_blank" rel="noreferrer">LinkedIn</a>
+      </div>
+    </div>
+    <p class="footer-note">© 2026 Mahlet Getinet — Built with HTML, CSS, and Vanilla JavaScript.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
