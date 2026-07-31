@@ -1,0 +1,30 @@
+# Dependencies – always reinstalled inside the container
+node_modules
+
+# Git history – not needed at runtime
+.git
+.gitignore
+
+# Environment files – injected via docker-compose or secrets
+.env
+.env.*
+
+# OS & editor noise
+.DS_Store
+Thumbs.db
+*.log
+npm-debug.log*
+
+# Test and development files
+tests/
+*.test.js
+*.spec.js
+coverage/
+
+# Documentation
+README.md
+*.md
+
+# Build artifacts (if any)
+dist/
+build/
