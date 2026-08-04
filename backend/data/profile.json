@@ -1,5 +1,5 @@
 {
-  "name": "Mahlet Getinet",
+  "name": "FADED",
   "professionalTitle": "Computer Science Student & Aspiring iOS Developer",
   "intro": "I build thoughtful digital experiences through clean code, elegant interfaces, and a passion for solving real-world problems.",
   "profileImage": "/frontend/assets/images/me.jpg",
@@ -24,23 +24,23 @@
   "skills": [
     {
       "name": "HTML",
-      "level": 92
+      "level": 80
     },
     {
       "name": "CSS",
-      "level": 88
+      "level": 80
     },
     {
       "name": "JavaScript",
-      "level": 86
+      "level": 80
     },
     {
       "name": "Swift",
-      "level": 84
+      "level": 80
     },
     {
       "name": "Java",
-      "level": 72
+      "level": 80
     }
   ],
   "achievements": [
