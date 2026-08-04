@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Admin Login</title>
+
+    <link rel="stylesheet" href="/frontend/assets/css/login.css">
+</head>
+<body>
+
+    <main class="login-container">
+
+        <div class="login-card">
+
+            <h1>Portfolio Admin</h1>
+            <p>Sign in to manage your portfolio.</p>
+
+            <form id="loginForm">
+
+                <div class="form-group">
+                    <label for="username">Username</label>
+
+                    <input
+                        type="text"
+                        id="username"
+                        name="username"
+                        placeholder="Enter your username"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Enter your password"
+                        required
+                    >
+                </div>
+
+                <button type="submit" id="loginButton">
+                    Sign In
+                </button>
+
+            </form>
+
+            <p id="errorMessage" class="error-message"></p>
+
+            <a href="index.html" class="back-link">
+                ← Back to Portfolio
+            </a>
+
+        </div>
+
+    </main>
+
+    <script src="/frontend/assets/js/api.js"></script>
+    <script src="/frontend/assets/js/auth.js"></script>
+    <script src="/frontend/assets/js/login.js"></script>
+
+</body>
+</html>

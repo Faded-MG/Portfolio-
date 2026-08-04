@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Admin</title>
+  <link rel="stylesheet" href="/frontend/assets/css/admin.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>Portfolio Admin Dashboard</h1>
+    <p>Manage your projects</p>
+  </header>
+<button id="logoutBtn">Logout</button>
+  <main>
+
+    <section class="project-form">
+
+  <h2>Add Project</h2>
+
+  <input 
+    type="text" 
+    id="title"
+    placeholder="Project title"
+  >
+
+  <textarea
+    id="description"
+    placeholder="Project description">
+  </textarea>
+
+  <select id="category">
+    <option value="web">Web</option>
+    <option value="mobile">Mobile</option>
+    <option value="ai">AI</option>
+  </select>
+
+  <input
+    type="text"
+    id="technologies"
+    placeholder="Technologies (comma separated)"
+  >
+
+  <input
+    type="url"
+    id="github"
+    placeholder="GitHub URL"
+  >
+
+  <input
+    type="url"
+    id="demo"
+    placeholder="Live Demo URL"
+  >
+
+  <select id="banner">
+
+    <option value="project-banner-1">
+      Banner 1
+    </option>
+
+    <option value="project-banner-2">
+      Banner 2
+    </option>
+
+    <option value="project-banner-3">
+      Banner 3
+    </option>
+
+    <option value="project-banner-4">
+      Banner 4
+    </option>
+
+  </select>
+
+  <button id="addProject">
+    Add Project
+  </button>
+
+</section>
+
+
+    <section class="projects">
+
+      <h2>Projects</h2>
+
+      <div id="projectList">
+        <!-- Projects appear here -->
+      </div>
+
+    </section>
+
+  </main>
+
+
+<script src="/frontend/assets/js/admin.js"></script>
+
+</body>
+</html>

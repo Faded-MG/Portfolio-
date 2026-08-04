@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/frontend/assets/css/style.css">
 </head>
 <body>
   <div class="loading-screen" id="loadingScreen" aria-hidden="true">
@@ -35,6 +35,7 @@
           <li><a href="#projects" class="nav-link">Projects</a></li>
           <li><a href="#skills" class="nav-link">Skills</a></li>
           <li><a href="#contact" class="nav-link">Contact</a></li>
+          <li><a href="login.html" class="nav-link">Sign In</a></li>
         </ul>
       </nav>
 
@@ -276,93 +277,28 @@
       </div>
     </section>
 
-    <section class="section projects-section" id="projects">
-      <div class="section-header reveal reveal-up">
-        <span class="section-label">Featured Projects</span>
-        <h2>Work that reflects polished thinking.</h2>
-        <p>Each project focuses on clarity, performance, and the details that matter.</p>
-      </div>
+      <section id="projects" class="projects-section">
 
-      <div class="project-controls reveal reveal-fade">
-        <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="web">Web</button>
-        <button class="filter-btn" data-filter="mobile">Mobile</button>
-        <button class="filter-btn" data-filter="ai">AI</button>
-      </div>
+  <div class="section-header reveal reveal-up">
+    <span class="section-label">Featured Projects</span>
+    <h2>Work that reflects polished thinking.</h2>
+    <p>
+      Each project focuses on clarity, performance, and the details that matter.
+    </p>
+  </div>
 
-      <div class="projects-grid">
-        <article class="project-card reveal reveal-up" data-category="web">
-          <div class="project-top">
-            <span class="project-tag">Web</span>
-            <div class="project-actions">
-              <a href="https://mahletgetinet17.github.io/smart-route" class="text-link" target="_blank" rel="noreferrer">Live Demo</a>
-              <a href="https://github.com/mahletgetinet17/smart-route" class="text-link" target="_blank" rel="noreferrer">GitHub</a>
-            </div>
-          </div>
-          <div class="project-banner project-banner-1" aria-hidden="true"></div>
-          <h3>Smart Route</h3>
-          <p>A route recommendation experience that blends traffic insights and user preferences into smarter travel decisions.</p>
-          <div class="project-badges">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-          </div>
-        </article>
+  <div class="project-controls reveal reveal-fade">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="web">Web</button>
+    <button class="filter-btn" data-filter="mobile">Mobile</button>
+    <button class="filter-btn" data-filter="ai">AI</button>
+  </div>
 
-        <article class="project-card reveal reveal-up" data-category="web">
-          <div class="project-top">
-            <span class="project-tag">Portfolio</span>
-            <div class="project-actions">
-              <a href="https://mahletgetinet17.github.io/portfolio" class="text-link" target="_blank" rel="noreferrer">Live Demo</a>
-              <a href="https://github.com/mahletgetinet17/portfolio" class="text-link" target="_blank" rel="noreferrer">GitHub</a>
-            </div>
-          </div>
-          <div class="project-banner project-banner-2" aria-hidden="true"></div>
-          <h3>Personal Portfolio</h3>
-          <p>A polished portfolio built for recruiters and interviewers, with a premium experience and strong visual hierarchy.</p>
-          <div class="project-badges">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-          </div>
-        </article>
+  <div id="projectsContainer" class="projects-grid">
 
-        <article class="project-card reveal reveal-up" data-category="ai">
-          <div class="project-top">
-            <span class="project-tag">AI</span>
-            <div class="project-actions">
-              <a href="https://mahletgetinet17.github.io/ai-homework-helper" class="text-link" target="_blank" rel="noreferrer">Live Demo</a>
-              <a href="https://github.com/mahletgetinet17/ai-homework-helper" class="text-link" target="_blank" rel="noreferrer">GitHub</a>
-            </div>
-          </div>
-          <div class="project-banner project-banner-3" aria-hidden="true"></div>
-          <h3>AI Homework Helper</h3>
-          <p>An educational assistant that helps students understand concepts through intelligent explanations and guided learning.</p>
-          <div class="project-badges">
-            <span>JavaScript</span>
-            <span>AI</span>
-            <span>UX</span>
-          </div>
-        </article>
+  </div>
 
-        <article class="project-card reveal reveal-up" data-category="web">
-          <div class="project-top">
-            <span class="project-tag">UI</span>
-            <div class="project-actions">
-              <a href="https://github.com/Faded-MG/Netflix-UI-Clone" class="text-link" target="_blank" rel="noreferrer">GitHub</a>
-            </div>
-          </div>
-          <div class="project-banner project-banner-4" aria-hidden="true"></div>
-          <h3>Netflix UI Clone</h3>
-          <p>A clean UI clone built to demonstrate my understanding of polished layout, visual hierarchy, and responsive interface design.</p>
-          <div class="project-badges">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>UI</span>
-          </div>
-        </article>
-      </div>
-    </section>
+</section>
 
     <section class="section timeline-section" id="timeline">
       <div class="section-header reveal reveal-up">
@@ -372,7 +308,8 @@
       </div>
 
       <div class="timeline-list">
-        <article class="timeline-item reveal reveal-left">
+        <article 
+    <section class="section projects-section" id="projects">class="timeline-item reveal reveal-left">
           <span class="timeline-year">2024</span>
           <h3>Started Computer Science</h3>
           <p>Began academic study and built the foundation for technical thinking, data structures, and software design.</p>
@@ -559,6 +496,8 @@
     <p class="footer-note">© 2026 Mahlet Getinet — Built with HTML, CSS, and Vanilla JavaScript.</p>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="/frontend/assets/js/api.js"></script>
+  <script src="/frontend/assets/js/script.js"></script>
+  <script src="/frontend/assets/js/main.js"></script>
 </body>
 </html>

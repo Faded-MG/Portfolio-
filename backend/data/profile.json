@@ -1,0 +1,66 @@
+{
+  "name": "Mahlet Getinet",
+  "professionalTitle": "Computer Science Student & Aspiring iOS Developer",
+  "intro": "I build thoughtful digital experiences through clean code, elegant interfaces, and a passion for solving real-world problems.",
+  "profileImage": "/frontend/assets/images/me.jpg",
+  "location": "Addis Ababa, Ethiopia",
+  "email": "mahletgetinet17@gmail.com",
+  "resumeLink": "/frontend/assets/images/Mahlet_Getinet_Resume.png",
+  "socialLinks": [
+    {
+      "label": "GitHub",
+      "url": "https://github.com/mahletgetinet17"
+    },
+    {
+      "label": "LinkedIn",
+      "url": "https://www.linkedin.com/in/mahlet-getinet-4b7975347h"
+    },
+    {
+      "label": "X",
+      "url": "https://x.com/duskwood_MG"
+    }
+  ],
+  "biography": "Combining rigorous engineering habits with clean visual systems helps me craft interfaces that feel intuitive, confident, and memorable.",
+  "skills": [
+    {
+      "name": "HTML",
+      "level": 92
+    },
+    {
+      "name": "CSS",
+      "level": 88
+    },
+    {
+      "name": "JavaScript",
+      "level": 86
+    },
+    {
+      "name": "Swift",
+      "level": 84
+    },
+    {
+      "name": "Java",
+      "level": 72
+    }
+  ],
+  "achievements": [
+    "Computer Science Student",
+    "Portfolio Projects",
+    "Continuous Learner",
+    "Future iOS Developer"
+  ],
+  "stats": [
+    {
+      "label": "Projects Completed",
+      "value": 5
+    },
+    {
+      "label": "Technologies Explored",
+      "value": 14
+    },
+    {
+      "label": "Hours Coding",
+      "value": 350
+    }
+  ]
+}

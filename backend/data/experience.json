@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "type": "education",
+    "title": "Computer Science Student",
+    "organization": "Academic Program",
+    "period": "2024 - Present",
+    "description": "Building foundations in software engineering, data structures, and systems thinking."
+  },
+  {
+    "id": 2,
+    "type": "certification",
+    "title": "Interactive Web Development",
+    "organization": "Self-directed Learning",
+    "period": "2025",
+    "description": "Improved UI implementation, responsive layouts, and polished frontend interactions."
+  }
+]

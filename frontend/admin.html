@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Admin</title>
+  <link rel="stylesheet" href="/frontend/assets/css/admin.css">
+</head>
+<body>
+  <div class="admin-shell">
+    <aside class="admin-sidebar">
+      <div>
+        <div class="brand-badge">Portfolio CMS</div>
+        <h1>Admin Dashboard</h1>
+      </div>
+      <nav class="admin-nav">
+        <button class="admin-nav-btn active" data-panel="overview">Overview</button>
+        <button class="admin-nav-btn" data-panel="profile">Profile</button>
+        <button class="admin-nav-btn" data-panel="projects">Projects</button>
+        <button class="admin-nav-btn" data-panel="experience">Experience</button>
+        <button class="admin-nav-btn" data-panel="contact">Contact</button>
+      </nav>
+      <button id="logoutBtn" class="button button-secondary">Logout</button>
+    </aside>
+
+    <main class="admin-content">
+      <section id="panel-overview" class="admin-panel active">
+        <h2>Dashboard Overview</h2>
+        <div class="summary-grid" id="summaryGrid"></div>
+      </section>
+
+      <section id="panel-profile" class="admin-panel">
+        <h2>Profile Manager</h2>
+        <form id="profileForm" class="admin-form">
+          <input id="profileName" name="name" placeholder="Name" required>
+          <input id="profileTitle" name="professionalTitle" placeholder="Professional title" required>
+          <textarea id="profileIntro" name="intro" placeholder="Short introduction" required></textarea>
+          <input id="profileImage" name="profileImage" placeholder="Profile image URL" required>
+          <input id="profileLocation" name="location" placeholder="Location" required>
+          <input id="profileEmail" name="email" type="email" placeholder="Email" required>
+          <input id="profileResume" name="resumeLink" placeholder="Resume link" required>
+          <textarea id="profileBiography" name="biography" placeholder="Biography"></textarea>
+          <textarea id="profileSkills" name="skills" placeholder="Skills (comma separated)"></textarea>
+          <textarea id="profileAchievements" name="achievements" placeholder="Achievements (one per line)"></textarea>
+          <button type="submit" class="button button-primary">Save Profile</button>
+        </form>
+      </section>
+
+      <section id="panel-projects" class="admin-panel">
+        <h2>Project Manager</h2>
+        <form id="projectForm" class="admin-form">
+          <input id="projectTitle" placeholder="Project title" required>
+          <textarea id="projectDescription" placeholder="Project description" required></textarea>
+          <select id="projectCategory">
+            <option value="web">Web</option>
+            <option value="mobile">Mobile</option>
+            <option value="ai">AI</option>
+          </select>
+          <input id="projectTechnologies" placeholder="Technologies (comma separated)">
+          <input id="projectGithub" type="url" placeholder="GitHub URL">
+          <input id="projectDemo" type="url" placeholder="Live demo URL">
+          <select id="projectBanner">
+            <option value="project-banner-1">Banner 1</option>
+            <option value="project-banner-2">Banner 2</option>
+            <option value="project-banner-3">Banner 3</option>
+          </select>
+          <label><input type="checkbox" id="projectFeatured"> Featured project</label>
+          <button type="submit" id="saveProjectBtn" class="button button-primary">Add Project</button>
+        </form>
+        <div id="projectList" class="list-grid"></div>
+      </section>
+
+      <section id="panel-experience" class="admin-panel">
+        <h2>Experience Manager</h2>
+        <form id="experienceForm" class="admin-form">
+          <input id="experienceTitle" placeholder="Title" required>
+          <input id="experienceOrganization" placeholder="Organization" required>
+          <input id="experiencePeriod" placeholder="Period" required>
+          <textarea id="experienceDescription" placeholder="Description"></textarea>
+          <select id="experienceType">
+            <option value="education">Education</option>
+            <option value="internship">Internship</option>
+            <option value="job">Job</option>
+            <option value="certification">Certification</option>
+          </select>
+          <button type="submit" class="button button-primary">Save Experience</button>
+        </form>
+        <div id="experienceList" class="list-grid"></div>
+      </section>
+
+      <section id="panel-contact" class="admin-panel">
+        <h2>Contact Manager</h2>
+        <form id="contactForm" class="admin-form">
+          <input id="contactEmail" type="email" placeholder="Email" required>
+          <input id="contactPhone" placeholder="Phone" required>
+          <input id="contactLocation" placeholder="Location" required>
+          <textarea id="contactMessage" placeholder="Contact message"></textarea>
+          <textarea id="contactSocialLinks" placeholder="Social links (JSON array format)"></textarea>
+          <input id="footerCopyright" placeholder="Footer copyright text" required>
+          <button type="submit" class="button button-primary">Save Contact</button>
+        </form>
+      </section>
+    </main>
+  </div>
+
+  <div id="toast" class="toast"></div>
+  <script src="/frontend/assets/js/api.js"></script>
+  <script src="/frontend/assets/js/auth.js"></script>
+  <script src="/frontend/assets/js/admin.js"></script>
+</body>
+</html>

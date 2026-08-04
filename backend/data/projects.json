@@ -1,0 +1,60 @@
+[
+  {
+    "id": 1,
+    "title": "Smart Route",
+    "description": "A route recommendation experience that blends traffic insights and user preferences into smarter travel decisions.",
+    "category": "web",
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "github": "https://github.com/mahletgetinet17/smart-route",
+    "demo": "https://mahletgetinet17.github.io/smart-route",
+    "banner": "project-banner-1",
+    "featured": true
+  },
+  {
+    "id": 2,
+    "title": "Personal Portfolio",
+    "description": "A polished portfolio built for recruiters and interviewers with a premium experience.",
+    "category": "web",
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "github": "https://github.com/mahletgetinet17/portfolio",
+    "demo": "https://mahletgetinet17.github.io/portfolio",
+    "banner": "project-banner-2",
+    "featured": true
+  },
+  {
+    "id": 3,
+    "title": "AI Homework Helper",
+    "description": "An educational assistant that helps students understand concepts through intelligent explanations.",
+    "category": "ai",
+    "technologies": [
+      "JavaScript",
+      "AI",
+      "UX"
+    ],
+    "github": "https://github.com/mahletgetinet17/ai-homework-helper",
+    "demo": "https://mahletgetinet17.github.io/ai-homework-helper",
+    "banner": "project-banner-3",
+    "featured": false
+  },
+  {
+    "id": 1785821697634,
+    "title": "Verify",
+    "description": "Check",
+    "category": "web",
+    "technologies": [
+      "JS"
+    ],
+    "github": "https://example.com",
+    "demo": "https://example.com",
+    "banner": "project-banner-1",
+    "featured": true
+  }
+]
